@@ -11,6 +11,12 @@ int main()
 {
 	int x;
 	cin>>x;
-	cout<<"Fibonacci od "<<x<<": "<<fibonacci(x)<<endl;
+	if(x<0)
+	{
+		cout<<"Blad: liczba ujemna!"<<endl;
+		return 1;
+	}
+	
+	cout<<"Fibonacci dla: "<<x<<": "<<fibonacci(x)<<endl;
 	return 0;
 }
